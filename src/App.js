@@ -14,7 +14,7 @@ function App() {
 
   return (
     <div className="App">
-      <Router>
+      <Router basename={"/eCommerce-web-application"}>
         {/* <NavTab /> */}
         <Routes>
           <Route
