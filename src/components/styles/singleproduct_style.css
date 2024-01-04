@@ -1,6 +1,7 @@
 .product-item-main{
     margin: 10px;
     width: 300px;
+    /* width: clamp(300px, 20%, 500px); */
     /* background-color: rgb(171, 156, 156); */
     padding: 10px;
     border: 0.1px solid rgb(162, 141, 141);
