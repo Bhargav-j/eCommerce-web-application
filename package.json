@@ -1,5 +1,6 @@
 {
   "name": "react-app",
+  "homepage": "https://Bhargav-j.github.io/eCommerce-web-application",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -11,6 +12,7 @@
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.3.2",
     "bootstrap-icons": "^1.11.2",
+    "gh-pages": "^6.1.1",
     "react": "^18.2.0",
     "react-bootstrap": "^2.9.2",
     "react-bootstrap-icons": "^1.10.3",
@@ -20,6 +22,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
