@@ -1,0 +1,80 @@
+.sort-main {
+  display: block;
+}
+
+.sort-items {
+  width: 100%;
+  height: 40px;
+  padding: 10px 20px;
+  position: relative;
+  /* background-color: green; */
+}
+
+.sort-items-text{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
+.sort-items-text-1{
+  background-color: rgb(204, 202, 202);
+  padding: 5px 10px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 5px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.sort-items-text-1.active{
+  background-color: rgb(168, 223, 223);
+}
+
+.sort-items-text-2{
+  padding: 5px;
+  margin-left: 5px;
+  background-color: rgb(204, 202, 202);
+  border-radius: 5px;
+}
+
+.sort-items-text-2.active{
+  background-color: rgb(168, 223, 223);
+}
+
+.sort-popup {
+  z-index: 999;
+  position: absolute;
+  background-color: white;
+  height: 80px;
+  top: 50px;
+  right: 20px;
+  border-radius: 0 0 10px 10px;
+  padding-inline: 14px;
+
+}
+
+.range-values{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 20px;
+    padding-bottom: 8px;
+}
+
+.range-filter {
+  display: flex;
+  align-items: center;
+}
+
+.range-slider {
+  position: relative;
+  width: 180px; /* Adjust width as needed */
+  height: 20px; /* Set the height of the slider */
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+

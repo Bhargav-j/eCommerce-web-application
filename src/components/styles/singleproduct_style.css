@@ -1,0 +1,135 @@
+.product-item-main{
+    margin: 10px;
+    width: 300px;
+    /* background-color: rgb(171, 156, 156); */
+    padding: 10px;
+    border: 0.1px solid rgb(162, 141, 141);
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    border-radius: 10px;
+}
+
+.product-item-main:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: none;
+}
+
+.product-item-box{
+    /* height: auto; */
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.product-item-images{
+    height: 250px;
+    width: auto;
+    background-color: rgb(230, 229, 229);
+    border-radius: 10px;
+}
+
+.carousel-item {
+    height: 250px;
+}
+
+.carousel-img-container{
+    /* background-color: green; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.carousel-item img{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 8px;
+}
+
+.carousel-control-prev, .carousel-control-next{
+    display: none;
+}
+
+.carousel-indicators{
+    margin-bottom: 0.5rem !important;
+}
+
+.carousel-indicators button{
+    width: 5px !important;
+    height: 5px !important;
+    margin-right: 10px !important;
+    border-radius: 50% !important;
+}
+
+.product-item-description{
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+
+}
+
+.product-item-title{
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    min-height: 50px;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-item-brand, .product-item-category{
+    font-weight: 600;
+}
+
+.product-item-rating-stock{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-item-rating{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background-color: green;
+    border-radius: 6px;
+    font-size: 14px;
+    width: 45px;
+    color: white;
+}
+
+.product-item-stock{
+    color: red;
+}
+
+.product-item-price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-item-value{
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.product-item-value-original{
+    text-decoration: line-through;
+    font-size: 18px;
+    color: gray;
+    font-weight: 400;
+}
+
+.product-item-discount{
+    color: green;
+}
+
+.product-item-cart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,15 @@
+.App {
+  box-sizing: border-box;
+}
+
+
+.all-products{
+  width:auto;
+  display: flex;
+  align-items: center;
+  justify-content:space-evenly;
+  gap: 10px;
+  padding-top: 10px;
+  /* background-color: red; */
+  flex-wrap: wrap;
+}
