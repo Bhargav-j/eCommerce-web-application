@@ -24,7 +24,8 @@
 .product-item-images{
     height: 250px;
     width: auto;
-    background-color: rgb(230, 229, 229);
+    /* background-color: rgb(230, 229, 229); */
+    background-color: white;
     border-radius: 10px;
 }
 
