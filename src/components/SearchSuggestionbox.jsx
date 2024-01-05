@@ -1,6 +1,6 @@
 import React, { useContext} from "react";
 import "./styles/searchSuggest_style.css";
-import { loginContext } from "./Context";
+import { productsContext } from "./Context";
 import { ListGroup } from "react-bootstrap";
 
 const SearchSuggestionbox = ({
@@ -9,7 +9,7 @@ const SearchSuggestionbox = ({
   setSuggestBox,
   setSmSearchActivate
 }) => {
-  const { products } = useContext(loginContext);
+  const { products } = useContext(productsContext);
 
   return (
     <div className="search_suggest">

@@ -1,22 +1,21 @@
-import React, { useContext} from "react";
-import { loginContext } from "./Context";
+import React, { useContext } from "react";
+import { productsContext } from "./Context";
 import SingleProduct from "./SingleProduct";
 import { SortProductsAlgo } from "./HOC/SortingAlgorithm";
 
-const Products = ({minPrice, maxPrice, sortType}) => {
-  const { products, searchInput} =
-    useContext(loginContext);
+const Products = ({ minPrice, maxPrice, sortType }) => {
+  const { products, searchInput } = useContext(productsContext);
 
-  let sortedProducts = []
+  let sortedProducts = [];
 
-  if (sortType){
-    if (sortType === "asce"){
-      sortedProducts = SortProductsAlgo(products)     //sortALGO
+  if (sortType) {
+    if (sortType === "asce") {
+      sortedProducts = SortProductsAlgo(products); //sortALGO
     } else {
-      sortedProducts = SortProductsAlgo(products).reverse()     //sortALGO
+      sortedProducts = SortProductsAlgo(products).reverse(); //sortALGO
     }
   } else {
-    sortedProducts = [...products]
+    sortedProducts = [...products];
   }
 
   // const sortedProducts = SortProductsAlgo(products)

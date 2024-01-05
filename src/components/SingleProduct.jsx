@@ -8,7 +8,7 @@ import {
   PlusCircleFill,
   StarFill,
 } from "react-bootstrap-icons";
-import { loginContext } from "./Context";
+import { productsContext } from "./Context";
 import { CartItemsChange } from "./HOC/CartItemsChange";
 
 // const products = {
@@ -31,7 +31,7 @@ import { CartItemsChange } from "./HOC/CartItemsChange";
 //   }
 
 const SingleProduct = ({ product }) => {
-  const { addCart, setAddCart } = useContext(loginContext);
+  const { addCart, setAddCart } = useContext(productsContext);
 
   const [leftProducts, setLeftProducts] = useState(null);
 

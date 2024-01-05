@@ -8,13 +8,13 @@ import {
 } from "react-bootstrap-icons";
 
 import "./styles/navtab_style.css";
-import { loginContext } from "./Context";
+import {productsContext } from "./Context";
 import CartItems from "./CartItems";
 import SearchSuggestionbox from "./SearchSuggestionbox";
 import SmallScreenSuggestBox from "./SmallScreenSuggestBox";
 
 const NavTab = ({ userName, img }) => {
-  const { searchInput, setSearchInput, addCart } = useContext(loginContext);
+  const { searchInput, setSearchInput, addCart } = useContext(productsContext);
 
   const [suggestBox, setSuggestBox] = useState(false);
   const [smSearchActivate, setSmSearchActivate] = useState(false);

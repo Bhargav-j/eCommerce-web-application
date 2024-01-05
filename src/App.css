@@ -1,5 +1,6 @@
 .App {
   box-sizing: border-box;
+  background-color: rgb(248, 220, 200);
 }
 
 .all-products {
@@ -9,7 +10,7 @@
   justify-content: space-evenly;
   gap: 10px;
   padding-top: 10px;
-  /* background-color: red; */
+  background-color: rgb(248, 220, 200);
   flex-wrap: wrap;
 }
 

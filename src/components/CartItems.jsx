@@ -2,10 +2,10 @@ import React, { useContext, useEffect, useState } from "react";
 import "./styles/cartItems_style.css";
 import { DashCircleFill, PlusCircleFill } from "react-bootstrap-icons";
 import { CartItemsChange } from "./HOC/CartItemsChange";
-import { loginContext } from "./Context";
+import {productsContext } from "./Context";
 
 const CartItems = ({ addCart }) => {
-  const { setAddCart, products } = useContext(loginContext);
+  const { setAddCart, products } = useContext(productsContext);
 
   const [totalPrice, setTotalPrice] = useState(0);
 

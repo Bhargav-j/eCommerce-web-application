@@ -1,9 +1,9 @@
 import React, { useContext, useEffect } from "react";
 import { Navigate, Outlet } from "react-router-dom";
-import { loginContext } from "./Context";
+import {productsContext } from "./Context";
 
 const ProtectedRoute = ({ islogin }) => {
-  const { setProducts } = useContext(loginContext);
+  const { setProducts } = useContext(productsContext);
 
   useEffect(() => {
     if (islogin) {
